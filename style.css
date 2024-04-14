@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+:root{
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --info: #79e3f4;
+    --text-color:#4D6D71;
+    --second-text-color:#515152;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--info);
+}
+nav{
+    height: 30vh;
+    width: 80%;
+    padding: 16px 38px;
+    margin: auto;
+    /* margin: 0px 38px; */
+    /* background-color: var(--cyan); */
+    
+}
+.logo-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 8px 0;
+    border-bottom: 1px solid rgba(77, 109, 113, 0.3);
+    
+}
+
+.logo-text p{
+    font-size: 32px;
+    letter-spacing: 1.5px;
+    color: #333333;
+    font-weight: 100;
+}
+.logo-text p::first-letter{
+    font-size: 40px;
+    color: var(--white);
+    font-weight: bold;
+}
+.logo-text #subtitle{
+    color: var(--text-color);
+}
+
+
+.login-section{
+    display: flex;
+    justify-content: space-between;
+}
+.login-section span{
+    margin-left: 3px;
+}
+
+button{
+    padding: 8px 20px;
+    border: none;
+    margin: 0 3px;
+    background-color: transparent;
+    font-size: 16px;
+    color: var(--text-color);
+}
+button i{
+    color: var(--white);
+    font-size: 20px;
+}
+
+/* Lower navbar */
+.menu{
+    display: flex;
+    margin: 16px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-around;
+}
+.menu ul li{
+    list-style-type: none;
+}
+.menu ul li a{
+    text-transform: uppercase;
+    font-size: 14.4px;
+    margin: 0px 14.4px;
+    padding: 10px 0;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: var(--second-text-color);
+}
+.menu ul li .active{
+    color: var(--red);
+    font-weight: bold;
+}
+.menu ul li a:hover{
+    color: var(--red);
+    transition: all .5s;
+}
+
+/* searchbar */
+input{
+    height: 45px;
+    width: 350px;
+    border: none;
+    padding-left: 30px;
+}
+input:focus{
+    outline: none;
+}
+::placeholder{
+    /* color: red; */
+    /* padding-left: 20px; */
+    text-transform: capitalize;
+    letter-spacing: 1.3px;
+
+}
+.search-bar button{
+    position: absolute;
+    right: 198px;
+    height: 38px;
+    width: 50px;
+    margin: 3px 0px;
+    text-align: center;
+    background-color: var(--red);
+    border-radius: 3px;
+    padding: 7px;
+}
+.search-bar button i{
+    font-size: 17px;
+   /* margin:  auto 5px; */
+    
+}
