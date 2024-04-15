@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="collection.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+
+	<style type="text/css">
+	:root{
+        --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #ec1c24;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --info: #79e3f4;
+    --text-color:#4D6D71;
+    --second-text-color:#515152;
+    --primary-text-color: #080808;
+     }
+	 
+	#text{
+		height: 35px;
+		border-radius: 5px;
+		padding: 4px;
+		border: solid thin #aaa;
+		width: 100%;
+		font-size: 17px;
+		margin-bottom: 10px;
+	}
+
+	#button, .sign{
+		padding: 10px;
+		width: 80px;
+		color: hwb(204 4% 71%);
+		background-color: var(--info);
+		border: none;
+		cursor: pointer;
+		border-radius: 5px;
+		font-size: 17px;
+		letter-spacing: 1.2px;
+	}
+
+	#box{
+		margin: 50px auto 0px auto;
+		height: 400px;
+		width: 350px;
+		padding: 20px;
+		color: black;
+        margin-bottom: 50px;
+        
+	}
+	.btn{
+		text-align: center;
+		font-size: 17px;
+	}
+	
+	 .sign{
+		padding: 10px 16px;
+		font-size: 18px;
+		letter-spacing: 1.2px;
+		margin-top: 30px;
+		background-color: var(--info);
+        }
+
+        #button:hover, .sign:hover{
+            background-color: var(--info);
+            color: hwb(204 4% 71%);
+			transition: .5s;
+        }
+       
+       .btn a{
+            text-decoration: none;
+            color:hwb(204 4% 71%) ;
+			margin-top: 30px;
+	
+        }
+        .login-section{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+	</style>
+
+<div class="container">
+    <nav>
+      <div class="logo-section">
+        <div class="logo-text">
+         <a href="index.html"><p>Baggage <br /></p>
+          <span id="subtitle">ONLINE STORE</span>
+        </a> 
+        </div>
+      
+
+        <div class="login-section">
+          <button class="login">
+            <i class="fa-solid fa-circle-user"></i>
+            <span>Sign In</span>
+          </button>
+
+          <button class="signup">
+            <i class="fa-solid fa-square-pen"></i>
+            <span>Sign Up</span>
+          </button>
+
+          <div class="cart">
+            <a href="addtocart.html">
+            <i class="fa-solid fa-cart-shopping"></i> <p id="count">0</p></a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="menu">
+          <ul>
+              <li> <a href="index.html" class="active">Home</a> </li>
+              <li> <a href="collection.html">Collections</a> </li>
+              <li> <a href="">Contact</a> </li>
+          </ul>
+         
+          <div class="search-bar">
+      
+              <input type="search" name="" id="" placeholder="search here...">
+              <button>
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          
+          </div>
+      
+      </div>
+    </nav>
+  </div>
+
+	<div id="box">
+		
+		<form method="post">
+			<div style="font-size: 25px;margin: 20px;color: hwb(204 4% 71%);">Login</div>
+
+			<input id="text" type="text" name="user_name" placeholder="User Name"><br><br>
+			<input id="text" type="password" name="password" placeholder="Password"><br><br>
+
+			<input id="button" type="submit" value="Login"><br><br>
+
+			<div class="btn">
+				<span>Dont have an Account?</span>
+				<br><br>
+			<a href="signup.php" class="sign">Signup</a>
+			</div>
+		</form>
+	</div>
+
+
+    <footer>
+        <div class="upper-footer">
+          <h1>Follow Us</h1>
+          <div class="icons">
+            <a href="">
+            <i class="fa-brands fa-facebook-f"><span>Facebook</span></i> 
+          </a>
+            <a href="">
+            <i class="fa-brands fa-twitter"><span>Twitter</span></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-google"><span>Google</span></i>
+          </a>
+          </div>
+        </div>
+        <div class="lower-footer">
+          <p>
+          &copy; 2024 Baggage. All rights reserved | Designed by NRR
+        </p>
+        </div>
+      </footer>
+</body>
+</html>

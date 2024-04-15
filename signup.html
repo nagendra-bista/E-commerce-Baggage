@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Creater A new Account</title>
+    <link rel="stylesheet" href="signup.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -12,43 +14,40 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="addtocart.css">
+    <link rel="stylesheet" href="collection.css">
 </head>
 <body>
+	
+    <!-- Navbar -->
     <div class="container">
         <nav>
           <div class="logo-section">
             <div class="logo-text">
-                <a href="index.html">
-              <p>Baggage <br /></p>
+             <a href="index.html"><p>Baggage <br /></p>
               <span id="subtitle">ONLINE STORE</span>
-            </a>
+            </a> 
             </div>
           
-  
+    
             <div class="login-section">
               <button class="login">
-                <a href="signin.html">
                 <i class="fa-solid fa-circle-user"></i>
                 <span>Sign In</span>
-            </a>
               </button>
-  
+    
               <button class="signup">
-                <a href="signup.html">
                 <i class="fa-solid fa-square-pen"></i>
                 <span>Sign Up</span>
-            </a>
               </button>
-  
+    
               <div class="cart">
                 <a href="addtocart.html">
                 <i class="fa-solid fa-cart-shopping"></i> <p id="count">0</p></a>
               </div>
-  
+    
             </div>
           </div>
-  
+    
           <div class="menu">
               <ul>
                   <li> <a href="index.html" class="active">Home</a> </li>
@@ -68,19 +67,27 @@
           </div>
         </nav>
       </div>
-
     
-    <div class="container-cart">
-        <div id="root"></div>
-        <div class="sidebar">
-            <div class="head"><p>My Cart Summary</p></div>
-            <div class="cartItem">Your cart is empty</div>
-            <div class="foot">
-                <h3>Total</h3>
-                <h2 id="total">$0.00</h2>
-            </div>
-        </div>
-    </div>
+
+    <form action="" method="post">
+        <legend>Register Your Account </legend>
+        <br>
+        
+        <input type="text" name="firstname" id="firstname" placeholder="First Name" class="firstname" required> 
+        <input type="text" name="lastname" id="lastname" placeholder="Last Name" class="lastname" required>
+<br><br>
+
+        <input type="email" name="email" id="email" placeholder="E-mail" class="form" required>
+        <br><br>
+        <input type="text" name="user_name" id="user_name" placeholder="User Name" class="form" required>
+        <br><br>
+        <input type="password" name="password" id="password" placeholder="Password" class="form" required>
+        <br><br>
+        
+    <br><br>
+        <input type="submit" value="Register" class="register"> <br><br>
+		<a href="login.php">Click to Login</a><br><br>
+    </form>
 
     <footer>
         <div class="upper-footer">
@@ -103,7 +110,5 @@
         </p>
         </div>
       </footer>
-
-    <script src="addtocart.js"></script>
 </body>
 </html>
